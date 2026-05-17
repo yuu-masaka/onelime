@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preload" href="../reader.js" as="script">
+	<title>ch2-beach</title>
+</head>
+<style>
+	body {background-color: #010101;}
+	a:link {color: #73A9FF;}
+	a:active {color: #82C8FF;}
+	a:visited {color: #1F75FF;}
+	a:hover {color: #567FBF;}
+</style>
+<body onload="loadJSON()">
+<script>data={"nextchapter": "../ch3-sltfemmeheaven/index.html", "previouschapter": "../ch2.5-beach_bonus/index.html", "pages": [{"page": "001.png"}, {"page": "002.png"}, {"page": "003.png"}, {"page": "004.png"}, {"page": "005.png"}, {"page": "006.png"}, {"page": "007.png"}, {"page": "008.png"}, {"page": "009.png"}, {"page": "010.png"}, {"page": "011.png"}, {"page": "012.png"}, {"page": "013.png"}, {"page": "014.png"}, {"page": "015.png"}, {"page": "016.png"}, {"page": "017.png"}, {"page": "018.png"}, {"page": "019.png"}, {"page": "020.png"}, {"page": "021.png"}, {"page": "022.png"}, {"page": "023.png"}, {"page": "024.png"}, {"page": "025.png"}, {"page": "026.png"}, {"page": "027.png"}, {"page": "028.png"}, {"page": "029.png"}, {"page": "030.png"}, {"page": "031.png"}, {"page": "032.png"}, {"page": "033.png"}, {"page": "034.png"}, {"page": "035.png"}, {"page": "036.png"}, {"page": "037.png"}, {"page": "038.png"}, {"page": "039.png"}, {"page": "040.png"}, {"page": "041.png"}, {"page": "042.png"}, {"page": "043.png"}, {"page": "044.png"}, {"page": "045.png"}, {"page": "046.png"}, {"page": "047.png"}, {"page": "048.png"}, {"page": "049.png"}, {"page": "060.png"}, {"page": "061.png"}, {"page": "062.png"}, {"page": "063.png"}, {"page": "064.png"}, {"page": "065.png"}, {"page": "066.png"}, {"page": "067.png"}, {"page": "068.png"}, {"page": "069.png"}, {"page": "070.png"}, {"page": "071.png"}, {"page": "072.png"}]}</script>
+<script type="text/javascript" src="../reader.js"></script>
+
+<img id="mainimage" href="#" style="width:100%"src="001.png" onclick="nextPage()" loadeddata="scrollTop()" $HIDDEN$></img>
+<div id = "pagination" style="position: relative">
+	<button style="float:left;width:10%;height:3em"type="button" onclick="window.location='../ch2.5-beach_bonus/index.html'">&lt;&lt;</button>
+	<button style="float:left;width:10%;height:3em"type="button" onclick="previousPage()">&lt;</button>
+	<span style="margin:auto; position:absolute;left: 30%;width: 40%;text-align: center;"> 
+		<input type="number" name="pageField" id="pageField" style="text-align:left;width: 4em" onchange="setpage(value-1)" value="1">
+		/ 
+		<span id="total"> </span>
+	</span>
+	<span style="margin:auto; position:absolute;left: 20%;width: 60%;text-align: center;top: 1em;word-wrap: break-word;">
+		<a href = "../index.html">ch2-beach</a>
+	</span>
+	<button style="float:right;width:10%;height:3em" type="button" onclick="window.location='../ch3-sltfemmeheaven/index.html'">&gt;&gt;</button>
+	<button style="float:right;width:10%;height:3em" type="button" onclick="nextPage()">&gt;</button>
+</div>
+</body>
+</html>
