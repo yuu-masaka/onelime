@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preload" href="reader.js" as="script">
+	<title></title>
+</head>
+<style>
+	body {background-color: #010101; color: #000000;}
+	a:link {color: #73A9FF;}
+	a:active {color: #82C8FF;}
+	a:visited {color: #1F75FF;}
+	a:hover {color: #567FBF;}
+	img {display: block; margin-left: auto; margin-right: auto;}
+</style>
+<body onload="loadJSON()">
+<script>data={"nextchapter": "#", "previouschapter": "../ch6-freejobs3/index.html", "pages": [{"page": "7.jpg"}, {"page": "8.jpg"}, {"page": "9.jpg"}, {"page": "10.jpg"}, {"page": "17.jpg"}]}</script>
+<script type="text/javascript" src="reader.js"></script>
+
+<img id="mainimage" href="#" style="width:auto" src="10.jpg" onclick="nextPage()"" $HIDDEN$></img>
+<div id = "pagination" style="position: relative">
+	<button style="float:left;width:10%;height:3em"type="button" onclick="window.location='#'">&lt;&lt;</button>
+	<button style="float:left;width:10%;height:3em"type="button" onclick="previousPage()">&lt;</button>
+	<span style="margin:auto; position:absolute;left: 30%;width: 40%;text-align: center;">
+		<input type="number" name="pageField" id="pageField" style="text-align:left;width: 4em" onchange="setpage(value-1)" value="1">
+		/
+		<span id="total"> </span>
+	</span>
+	<span style="margin:auto; position:absolute;left: 20%;width: 60%;text-align: center;top: 1em;word-wrap: break-word;">
+		<a href = "."></a>
+	</span>
+	<button style="float:right;width:10%;height:3em" type="button" onclick="window.location='#'">&gt;&gt;</button>
+	<button style="float:right;width:10%;height:3em" type="button" onclick="nextPage()">&gt;</button>
+</div>
+</body>
+</html>
